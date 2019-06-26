@@ -25,9 +25,8 @@ class TestController < ApplicationController
           pp type, name, message
         end
       end
-    ensure
-      client.close
     end
+    client.close
     head(204)
   end
 end
